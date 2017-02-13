@@ -16,10 +16,11 @@ private:
 	static void setScale(const v8::FunctionCallbackInfo<v8::Value>& args);
 	static void setOffset(const v8::FunctionCallbackInfo<v8::Value>& args);
 	static void tare(const v8::FunctionCallbackInfo<v8::Value>& args);
+	static void powerDown(const v8::FunctionCallbackInfo<v8::Value>& args);
+	static void powerUp(const v8::FunctionCallbackInfo<v8::Value>& args);
 	static void getUnits(const v8::FunctionCallbackInfo<v8::Value>& args);
 	static void setGain(const v8::FunctionCallbackInfo<v8::Value>& args);
 	static void getScale(const v8::FunctionCallbackInfo<v8::Value>& args);
 	static void getOffset(const v8::FunctionCallbackInfo<v8::Value>& args);
 	HX711* mSensor;
 };
-
